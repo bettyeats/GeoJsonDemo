@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C546957F20945F8D0009F317 /* CaffeClassify.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C546957320945F8C0009F317 /* CaffeClassify.cpp */; };
+		C546958020945F8D0009F317 /* Dispatcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C546957520945F8D0009F317 /* Dispatcher.cpp */; };
+		C546958120945F8D0009F317 /* face_alignment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C546957820945F8D0009F317 /* face_alignment.cpp */; };
+		C546958220945F8D0009F317 /* DcncAlign.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C546957920945F8D0009F317 /* DcncAlign.cpp */; };
+		C546958320945F8D0009F317 /* Landmaker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C546957B20945F8D0009F317 /* Landmaker.cpp */; };
+		C546958420945F8D0009F317 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C546957C20945F8D0009F317 /* main.cpp */; };
+		C5469586209993250009F317 /* libopencv_features2d.2.4.13.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C5469585209993250009F317 /* libopencv_features2d.2.4.13.dylib */; };
+		C55F2C2C202BF9AC0019C8AE /* libopencv_highgui.2.4.13.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C55F2C22202BF9AC0019C8AE /* libopencv_highgui.2.4.13.dylib */; };
+		C55F2C2D202BF9AC0019C8AE /* libopencv_core.2.4.13.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C55F2C23202BF9AC0019C8AE /* libopencv_core.2.4.13.dylib */; };
+		C55F2C2E202BF9AC0019C8AE /* libopencv_imgproc.2.4.13.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C55F2C24202BF9AC0019C8AE /* libopencv_imgproc.2.4.13.dylib */; };
+		C55F2C2F202BF9AC0019C8AE /* libopencv_legacy.2.4.13.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C55F2C25202BF9AC0019C8AE /* libopencv_legacy.2.4.13.dylib */; };
+		C55F2C30202BF9AC0019C8AE /* libopencv_contrib.2.4.13.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C55F2C26202BF9AC0019C8AE /* libopencv_contrib.2.4.13.dylib */; };
+		C55F2C31202BF9AC0019C8AE /* libopencv_calib3d.2.4.13.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C55F2C27202BF9AC0019C8AE /* libopencv_calib3d.2.4.13.dylib */; };
+		C55F2C32202BF9AC0019C8AE /* libopencv_video.2.4.13.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C55F2C28202BF9AC0019C8AE /* libopencv_video.2.4.13.dylib */; };
+		C55F2C33202BF9AC0019C8AE /* libopencv_ts.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C55F2C29202BF9AC0019C8AE /* libopencv_ts.a */; };
+		C55F2C34202BF9AC0019C8AE /* libopencv_videostab.2.4.13.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C55F2C2A202BF9AC0019C8AE /* libopencv_videostab.2.4.13.dylib */; };
+		C55F2C57202C5B330019C8AE /* libopencv_objdetect.2.4.13.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C55F2C56202C5B320019C8AE /* libopencv_objdetect.2.4.13.dylib */; };
+		C56CA3DC2029F97B0075F345 /* libthrift-0.9.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C56CA3DA2029F97B0075F345 /* libthrift-0.9.3.dylib */; };
+		C56CA3DD2029F97B0075F345 /* libthriftnb-0.9.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C56CA3DB2029F97B0075F345 /* libthriftnb-0.9.3.dylib */; };
+		C56CA3DF2029FC870075F345 /* libgif.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C56CA3DE2029FC870075F345 /* libgif.4.dylib */; };
+		C56CA3E12029FD0B0075F345 /* libboost_system.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C56CA3E02029FD0B0075F345 /* libboost_system.dylib */; };
+		C56CA3E42029FF1F0075F345 /* libglog.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C56CA3E32029FF1F0075F345 /* libglog.0.dylib */; };
+		C56CA3E6202A00050075F345 /* libcryptopp.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C56CA3E5202A00050075F345 /* libcryptopp.dylib */; };
+		C56CA3E8202A009E0075F345 /* libcaffe.so.1.0.0 in Frameworks */ = {isa = PBXBuildFile; fileRef = C56CA3E7202A009E0075F345 /* libcaffe.so.1.0.0 */; };
+		C56CA3EA202A09630075F345 /* libevent.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C56CA3E9202A09630075F345 /* libevent.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AAEDA3FD1E247D3C00E6F099 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AAEDA3FF1E247D3C00E6F099 /* CaffeClassifyServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CaffeClassifyServer; sourceTree = BUILT_PRODUCTS_DIR; };
+		C546957320945F8C0009F317 /* CaffeClassify.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CaffeClassify.cpp; sourceTree = "<group>"; };
+		C546957420945F8D0009F317 /* DcncAlign.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DcncAlign.hpp; sourceTree = "<group>"; };
+		C546957520945F8D0009F317 /* Dispatcher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Dispatcher.cpp; sourceTree = "<group>"; };
+		C546957620945F8D0009F317 /* Dispatcher.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Dispatcher.hpp; sourceTree = "<group>"; };
+		C546957720945F8D0009F317 /* CaffeClassify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaffeClassify.h; sourceTree = "<group>"; };
+		C546957820945F8D0009F317 /* face_alignment.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = face_alignment.cpp; sourceTree = "<group>"; };
+		C546957920945F8D0009F317 /* DcncAlign.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DcncAlign.cpp; sourceTree = "<group>"; };
+		C546957A20945F8D0009F317 /* helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = helper.h; sourceTree = "<group>"; };
+		C546957B20945F8D0009F317 /* Landmaker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Landmaker.cpp; sourceTree = "<group>"; };
+		C546957C20945F8D0009F317 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		C546957D20945F8D0009F317 /* face_alignment.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = face_alignment.hpp; sourceTree = "<group>"; };
+		C546957E20945F8D0009F317 /* Landmaker.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Landmaker.hpp; sourceTree = "<group>"; };
+		C5469585209993250009F317 /* libopencv_features2d.2.4.13.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_features2d.2.4.13.dylib; path = "../../Documents/betty/package/opencv-2.4.13/release/lib/libopencv_features2d.2.4.13.dylib"; sourceTree = "<group>"; };
+		C55F2C21202BF9AC0019C8AE /* cv2.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = cv2.so; path = "../../Documents/betty/package/opencv-2.4.13/release/lib/cv2.so"; sourceTree = "<group>"; };
+		C55F2C22202BF9AC0019C8AE /* libopencv_highgui.2.4.13.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_highgui.2.4.13.dylib; path = "../../Documents/betty/package/opencv-2.4.13/release/lib/libopencv_highgui.2.4.13.dylib"; sourceTree = "<group>"; };
+		C55F2C23202BF9AC0019C8AE /* libopencv_core.2.4.13.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_core.2.4.13.dylib; path = "../../Documents/betty/package/opencv-2.4.13/release/lib/libopencv_core.2.4.13.dylib"; sourceTree = "<group>"; };
+		C55F2C24202BF9AC0019C8AE /* libopencv_imgproc.2.4.13.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_imgproc.2.4.13.dylib; path = "../../Documents/betty/package/opencv-2.4.13/release/lib/libopencv_imgproc.2.4.13.dylib"; sourceTree = "<group>"; };
+		C55F2C25202BF9AC0019C8AE /* libopencv_legacy.2.4.13.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_legacy.2.4.13.dylib; path = "../../Documents/betty/package/opencv-2.4.13/release/lib/libopencv_legacy.2.4.13.dylib"; sourceTree = "<group>"; };
+		C55F2C26202BF9AC0019C8AE /* libopencv_contrib.2.4.13.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_contrib.2.4.13.dylib; path = "../../Documents/betty/package/opencv-2.4.13/release/lib/libopencv_contrib.2.4.13.dylib"; sourceTree = "<group>"; };
+		C55F2C27202BF9AC0019C8AE /* libopencv_calib3d.2.4.13.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_calib3d.2.4.13.dylib; path = "../../Documents/betty/package/opencv-2.4.13/release/lib/libopencv_calib3d.2.4.13.dylib"; sourceTree = "<group>"; };
+		C55F2C28202BF9AC0019C8AE /* libopencv_video.2.4.13.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_video.2.4.13.dylib; path = "../../Documents/betty/package/opencv-2.4.13/release/lib/libopencv_video.2.4.13.dylib"; sourceTree = "<group>"; };
+		C55F2C29202BF9AC0019C8AE /* libopencv_ts.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopencv_ts.a; path = "../../Documents/betty/package/opencv-2.4.13/release/lib/libopencv_ts.a"; sourceTree = "<group>"; };
+		C55F2C2A202BF9AC0019C8AE /* libopencv_videostab.2.4.13.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_videostab.2.4.13.dylib; path = "../../Documents/betty/package/opencv-2.4.13/release/lib/libopencv_videostab.2.4.13.dylib"; sourceTree = "<group>"; };
+		C55F2C40202BFB1C0019C8AE /* thrift-0.9.3 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "thrift-0.9.3"; path = "../../Documents/betty/package/thrift-0.9.3"; sourceTree = "<group>"; };
+		C55F2C56202C5B320019C8AE /* libopencv_objdetect.2.4.13.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_objdetect.2.4.13.dylib; path = "../../Documents/betty/package/opencv-2.4.13/release/lib/libopencv_objdetect.2.4.13.dylib"; sourceTree = "<group>"; };
+		C56CA39F20297B650075F345 /* libcaffe.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcaffe.a; path = "../caffe-master/.build_release/lib/libcaffe.a"; sourceTree = "<group>"; };
+		C56CA3DA2029F97B0075F345 /* libthrift-0.9.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libthrift-0.9.3.dylib"; path = "../../Documents/betty/package/thrift-0.9.3/libthrift-0.9.3.dylib"; sourceTree = "<group>"; };
+		C56CA3DB2029F97B0075F345 /* libthriftnb-0.9.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libthriftnb-0.9.3.dylib"; path = "../../Documents/betty/package/thrift-0.9.3/libthriftnb-0.9.3.dylib"; sourceTree = "<group>"; };
+		C56CA3DE2029FC870075F345 /* libgif.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libgif.4.dylib; path = "../../Documents/betty/package/giflib-4.2.3/lib/libgif.4.dylib"; sourceTree = "<group>"; };
+		C56CA3E02029FD0B0075F345 /* libboost_system.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_system.dylib; path = ../../Documents/betty/package/boost/libboost_system.dylib; sourceTree = "<group>"; };
+		C56CA3E32029FF1F0075F345 /* libglog.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglog.0.dylib; path = ../../Documents/betty/package/libglog/libglog.0.dylib; sourceTree = "<group>"; };
+		C56CA3E5202A00050075F345 /* libcryptopp.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcryptopp.dylib; path = ../../Documents/betty/package/libcrytopp/libcryptopp.dylib; sourceTree = "<group>"; };
+		C56CA3E7202A009E0075F345 /* libcaffe.so.1.0.0 */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcaffe.so.1.0.0; path = "../caffe-master/.build_release/lib/libcaffe.so.1.0.0"; sourceTree = "<group>"; };
+		C56CA3E9202A09630075F345 /* libevent.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libevent.dylib; path = ../../Documents/betty/package/libevent/libevent.dylib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AAEDA3FC1E247D3C00E6F099 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5469586209993250009F317 /* libopencv_features2d.2.4.13.dylib in Frameworks */,
+				C55F2C57202C5B330019C8AE /* libopencv_objdetect.2.4.13.dylib in Frameworks */,
+				C55F2C2C202BF9AC0019C8AE /* libopencv_highgui.2.4.13.dylib in Frameworks */,
+				C55F2C2D202BF9AC0019C8AE /* libopencv_core.2.4.13.dylib in Frameworks */,
+				C55F2C2E202BF9AC0019C8AE /* libopencv_imgproc.2.4.13.dylib in Frameworks */,
+				C55F2C2F202BF9AC0019C8AE /* libopencv_legacy.2.4.13.dylib in Frameworks */,
+				C55F2C30202BF9AC0019C8AE /* libopencv_contrib.2.4.13.dylib in Frameworks */,
+				C55F2C31202BF9AC0019C8AE /* libopencv_calib3d.2.4.13.dylib in Frameworks */,
+				C55F2C32202BF9AC0019C8AE /* libopencv_video.2.4.13.dylib in Frameworks */,
+				C55F2C33202BF9AC0019C8AE /* libopencv_ts.a in Frameworks */,
+				C55F2C34202BF9AC0019C8AE /* libopencv_videostab.2.4.13.dylib in Frameworks */,
+				C56CA3EA202A09630075F345 /* libevent.dylib in Frameworks */,
+				C56CA3E8202A009E0075F345 /* libcaffe.so.1.0.0 in Frameworks */,
+				C56CA3E6202A00050075F345 /* libcryptopp.dylib in Frameworks */,
+				C56CA3E42029FF1F0075F345 /* libglog.0.dylib in Frameworks */,
+				C56CA3E12029FD0B0075F345 /* libboost_system.dylib in Frameworks */,
+				C56CA3DF2029FC870075F345 /* libgif.4.dylib in Frameworks */,
+				C56CA3DC2029F97B0075F345 /* libthrift-0.9.3.dylib in Frameworks */,
+				C56CA3DD2029F97B0075F345 /* libthriftnb-0.9.3.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AAEDA3F61E247D3C00E6F099 = {
+			isa = PBXGroup;
+			children = (
+				AAEDA4011E247D3C00E6F099 /* CaffeClassifyServer */,
+				AAEDA4001E247D3C00E6F099 /* Products */,
+				AAEDA4191E24813A00E6F099 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AAEDA4001E247D3C00E6F099 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AAEDA3FF1E247D3C00E6F099 /* CaffeClassifyServer */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AAEDA4011E247D3C00E6F099 /* CaffeClassifyServer */ = {
+			isa = PBXGroup;
+			children = (
+				C546957320945F8C0009F317 /* CaffeClassify.cpp */,
+				C546957720945F8D0009F317 /* CaffeClassify.h */,
+				C546957920945F8D0009F317 /* DcncAlign.cpp */,
+				C546957420945F8D0009F317 /* DcncAlign.hpp */,
+				C546957520945F8D0009F317 /* Dispatcher.cpp */,
+				C546957620945F8D0009F317 /* Dispatcher.hpp */,
+				C546957820945F8D0009F317 /* face_alignment.cpp */,
+				C546957D20945F8D0009F317 /* face_alignment.hpp */,
+				C546957A20945F8D0009F317 /* helper.h */,
+				C546957B20945F8D0009F317 /* Landmaker.cpp */,
+				C546957E20945F8D0009F317 /* Landmaker.hpp */,
+				C546957C20945F8D0009F317 /* main.cpp */,
+			);
+			path = CaffeClassifyServer;
+			sourceTree = "<group>";
+		};
+		AAEDA4191E24813A00E6F099 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5469585209993250009F317 /* libopencv_features2d.2.4.13.dylib */,
+				C55F2C56202C5B320019C8AE /* libopencv_objdetect.2.4.13.dylib */,
+				C55F2C40202BFB1C0019C8AE /* thrift-0.9.3 */,
+				C55F2C21202BF9AC0019C8AE /* cv2.so */,
+				C55F2C27202BF9AC0019C8AE /* libopencv_calib3d.2.4.13.dylib */,
+				C55F2C26202BF9AC0019C8AE /* libopencv_contrib.2.4.13.dylib */,
+				C55F2C23202BF9AC0019C8AE /* libopencv_core.2.4.13.dylib */,
+				C55F2C22202BF9AC0019C8AE /* libopencv_highgui.2.4.13.dylib */,
+				C55F2C24202BF9AC0019C8AE /* libopencv_imgproc.2.4.13.dylib */,
+				C55F2C25202BF9AC0019C8AE /* libopencv_legacy.2.4.13.dylib */,
+				C55F2C29202BF9AC0019C8AE /* libopencv_ts.a */,
+				C55F2C28202BF9AC0019C8AE /* libopencv_video.2.4.13.dylib */,
+				C55F2C2A202BF9AC0019C8AE /* libopencv_videostab.2.4.13.dylib */,
+				C56CA39F20297B650075F345 /* libcaffe.a */,
+				C56CA3E7202A009E0075F345 /* libcaffe.so.1.0.0 */,
+				C56CA3E9202A09630075F345 /* libevent.dylib */,
+				C56CA3E5202A00050075F345 /* libcryptopp.dylib */,
+				C56CA3E32029FF1F0075F345 /* libglog.0.dylib */,
+				C56CA3E02029FD0B0075F345 /* libboost_system.dylib */,
+				C56CA3DE2029FC870075F345 /* libgif.4.dylib */,
+				C56CA3DA2029F97B0075F345 /* libthrift-0.9.3.dylib */,
+				C56CA3DB2029F97B0075F345 /* libthriftnb-0.9.3.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AAEDA3FE1E247D3C00E6F099 /* CaffeClassifyServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAEDA4061E247D3C00E6F099 /* Build configuration list for PBXNativeTarget "CaffeClassifyServer" */;
+			buildPhases = (
+				AAEDA3FB1E247D3C00E6F099 /* Sources */,
+				AAEDA3FC1E247D3C00E6F099 /* Frameworks */,
+				AAEDA3FD1E247D3C00E6F099 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CaffeClassifyServer;
+			productName = CaffeClassifyServer;
+			productReference = AAEDA3FF1E247D3C00E6F099 /* CaffeClassifyServer */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AAEDA3F71E247D3C00E6F099 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = RemarkMedia;
+				TargetAttributes = {
+					AAEDA3FE1E247D3C00E6F099 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 847L9RGK36;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = AAEDA3FA1E247D3C00E6F099 /* Build configuration list for PBXProject "CaffeClassifyServer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AAEDA3F61E247D3C00E6F099;
+			productRefGroup = AAEDA4001E247D3C00E6F099 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AAEDA3FE1E247D3C00E6F099 /* CaffeClassifyServer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AAEDA3FB1E247D3C00E6F099 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C546958020945F8D0009F317 /* Dispatcher.cpp in Sources */,
+				C546958320945F8D0009F317 /* Landmaker.cpp in Sources */,
+				C546958420945F8D0009F317 /* main.cpp in Sources */,
+				C546958220945F8D0009F317 /* DcncAlign.cpp in Sources */,
+				C546957F20945F8D0009F317 /* CaffeClassify.cpp in Sources */,
+				C546958120945F8D0009F317 /* face_alignment.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AAEDA4041E247D3C00E6F099 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"CPU_ONLY=1",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"/Users/betty/project/caffe-master/include",
+					"/Users/betty/project/caffe-master/include/caffe",
+					/usr/local/include,
+					/usr/local/include/boost,
+					/Users/betty/project/CaffeClassifyServer/eigen,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"/Users/betty/project/caffe-master/build/lib",
+					/usr/local/lib,
+					/usr/local/Cellar/protobuf/3.5.1/lib,
+					/usr/local/Cellar/glog/0.3.5_3/lib,
+					/usr/local/Cellar/gflags/2.2.1/lib,
+					/usr/local/Cellar/leveldb/1.20_2/lib,
+					/usr/local/Cellar/snappy/1.1.7_1/lib,
+					/usr/local/Cellar/hdf5/1.10.1_2/lib,
+					/usr/local/Cellar/lmdb/0.9.21/lib,
+					/usr/local/Cellar/giflib/5.1.4/lib,
+					"/Users/betty/Documents/betty/package/opencv-2.4.13/release/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AAEDA4051E247D3C00E6F099 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"CPU_ONLY=1",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"/Users/betty/project/caffe-master/include",
+					"/Users/betty/project/caffe-master/include/caffe",
+					/usr/local/include,
+					/usr/local/include/boost,
+					/Users/betty/project/CaffeClassifyServer/eigen,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"/Users/betty/project/caffe-master/build/lib",
+					/usr/local/lib,
+					/usr/local/Cellar/protobuf/3.5.1/lib,
+					/usr/local/Cellar/glog/0.3.5_3/lib,
+					/usr/local/Cellar/gflags/2.2.1/lib,
+					/usr/local/Cellar/leveldb/1.20_2/lib,
+					/usr/local/Cellar/snappy/1.1.7_1/lib,
+					/usr/local/Cellar/hdf5/1.10.1_2/lib,
+					/usr/local/Cellar/lmdb/0.9.21/lib,
+					/usr/local/Cellar/giflib/5.1.4/lib,
+					"/Users/betty/Documents/betty/package/opencv-2.4.13/release/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		AAEDA4071E247D3C00E6F099 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 847L9RGK36;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					CPU_ONLY,
+				);
+				HEADER_SEARCH_PATHS = (
+					"/Users/betty/project/caffe-master/include",
+					"/Users/betty/project/caffe-master/include/caffe",
+					/usr/local/include,
+					"/usr//local/include/cryptopp",
+					/usr/local/Cellar/giflib/5.1.4/include,
+					/usr/local/opt/openblas/include,
+					/Users/betty/project/CaffeClassifyServer/eigen,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"/Users/betty/project/caffe-master/build/lib",
+					/usr/local/lib,
+					/usr/local/Cellar/protobuf/3.5.1/lib,
+					/usr/local/Cellar/glog/0.3.5_3/lib,
+					/usr/local/Cellar/gflags/2.2.1/lib,
+					/usr/local/Cellar/snappy/1.1.7_1/lib,
+					/usr/local/Cellar/leveldb/1.20_2/lib,
+					/usr/local/Cellar/hdf5/1.10.1_2/lib,
+					/usr/local/Cellar/lmdb/0.9.21/lib,
+					"/Users/betty/Documents/betty/package/giflib-4.2.3/lib",
+					/usr/local/opt/openblas/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AAEDA4081E247D3C00E6F099 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 847L9RGK36;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = CPU_ONLY;
+				HEADER_SEARCH_PATHS = (
+					"/Users/betty/project/caffe-master/include",
+					"/Users/betty/project/caffe-master/include/caffe",
+					/usr/local/include,
+					"/usr//local/include/cryptopp",
+					/usr/local/Cellar/giflib/5.1.4/include,
+					/usr/local/opt/openblas/include,
+					/Users/betty/project/CaffeClassifyServer/eigen,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"/Users/betty/project/caffe-master/build/lib",
+					/usr/local/lib,
+					/usr/local/Cellar/protobuf/3.5.1/lib,
+					/usr/local/Cellar/glog/0.3.5_3/lib,
+					/usr/local/Cellar/gflags/2.2.1/lib,
+					/usr/local/Cellar/snappy/1.1.7_1/lib,
+					/usr/local/Cellar/leveldb/1.20_2/lib,
+					/usr/local/Cellar/hdf5/1.10.1_2/lib,
+					/usr/local/Cellar/lmdb/0.9.21/lib,
+					"/Users/betty/Documents/betty/package/giflib-4.2.3/lib",
+					/usr/local/opt/openblas/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AAEDA3FA1E247D3C00E6F099 /* Build configuration list for PBXProject "CaffeClassifyServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAEDA4041E247D3C00E6F099 /* Debug */,
+				AAEDA4051E247D3C00E6F099 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAEDA4061E247D3C00E6F099 /* Build configuration list for PBXNativeTarget "CaffeClassifyServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAEDA4071E247D3C00E6F099 /* Debug */,
+				AAEDA4081E247D3C00E6F099 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AAEDA3F71E247D3C00E6F099 /* Project object */;
+}
